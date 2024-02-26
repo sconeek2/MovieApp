@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Styles/App.css';
+
 import ComingSoon from './Components/ComingSoon';
 import MovieDetails from './Components/MovieDetails';
 import MovieSearch from './Components/MovieSearch';
@@ -96,11 +97,13 @@ function App() {
 
   return (
     <div className='App '>
-      <ComingSoon movieData={movieData} clickHandler={clickHandler} />?
+      <ComingSoon movieData={movieData} clickHandler={clickHandler} />
+
       <div className='lowerContainer'>
         <MovieDetails searchedMovie={searchedMovie} selectedMovie={selectedMovie} />
         <MovieSearch searchMovie={searchMovie} handleInputChange={handleInputChange} searchTerm={searchTerm} />
       </div>
+      <div className='test'></div>
     </div>
   );
 }
